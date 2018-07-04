@@ -1,5 +1,6 @@
-# yes89's git
-# Hi, I'm yoonsik. 
+# yoonsik's GitHub
+ 
+Welcome to my github page.
+This is my play ground.
 
-
-This is my code's
+Take a around~ :)
