@@ -15,9 +15,19 @@ int findWhichSide(int size)
     int half = size/2;
 
     if( r < half && c < half) return 0;
-    else if( r < half && c >= half) return half*half;
-    else if( r >= half && c < half) return size*half;
-        
+    else if( r < half && c >= half) 
+    {
+        c = c - half;
+        return half*half;
+    }
+    else if( r >= half && c < half) 
+    {
+        r = r - half;
+        return size*half;
+    }
+    c = c - half;
+    r = r - half;
+    
     return half*half + half*size;
 }
 
@@ -47,8 +57,7 @@ int main(void)
         if( N == 1)
         {
             // arr size가 2인 경우 처리할 것   
-            cout<< whereIs() <<endl;
-            
+            cout<< whereIs() <<endl;  
         }
         else 
         { 
@@ -57,7 +66,7 @@ int main(void)
                 tmp = findWhichSide(arrSize);
                 starting = tmp + starting;
                 arrSize /= 2;
-                //cout<<"which : "<<starting<<endl;
+                cout<<"which : "<<starting<<endl;
                 if( arrSize == 2)
                 {
                     tmp = whereIs();
