@@ -66,7 +66,7 @@ int main(void)
                 tmp = findWhichSide(arrSize);
                 starting = tmp + starting;
                 arrSize /= 2;
-                cout<<"which : "<<starting<<endl;
+                //cout<<"which : "<<starting<<endl;
                 if( arrSize == 2)
                 {
                     tmp = whereIs();
